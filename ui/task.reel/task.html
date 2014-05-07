@@ -8,6 +8,9 @@
         "owner": {
             "properties": {
                 "element": {"#": "owner"}
+            },
+            "bindings": {
+                "classList.has('completed')": {"<-": "task.completed"}
             }
         },
         "checkbox": {
@@ -36,8 +39,7 @@
 <body>
     <div data-montage-id="owner" class="Task">
         <input type="checkbox" data-montage-id="checkbox">
-            <input data-montage-id="textField" type="text">
-        </input>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
